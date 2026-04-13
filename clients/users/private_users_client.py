@@ -1,6 +1,6 @@
 from typing import TypedDict
 from httpx import Response
-from  clients.api_client import APIClient
+from clients.api_client import APIClient
 
 
 class UpdateUserRequestDict(TypedDict):
@@ -17,7 +17,7 @@ class PrivateUserClient(APIClient):
     """
     Клиент для работы с /api/v1/users
     """
-    def get_ser_me_api(self) -> Response:
+    def get_user_me_api(self) -> Response:
         """
         Метод получения текущего пользователя.
 
